@@ -1,0 +1,24 @@
+{
+  "name": "react-nextjs",
+  "version": "1.0.0",
+  "description": "Headless WordPress with React and Next.js Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmaulon/headless-wp-react-nextjs.git"
+  },
+  "keywords": [
+    "wordpress",
+    "react",
+    "next.js"
+  ],
+  "author": "Thomas Maulon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmaulon/headless-wp-react-nextjs/issues"
+  },
+  "homepage": "https://github.com/tmaulon/headless-wp-react-nextjs#readme"
+}
