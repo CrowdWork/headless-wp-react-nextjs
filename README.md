@@ -65,7 +65,6 @@ Anything inside a **pages directory** will be treated as a **page**. Anything **
 
 > _Still running your project via `bash npm run dev` : click “Posts” to see posts page_
 
-> _**NB: ** The URL is updated and the content is dynamically updated. This is a fairly simple use of routing._
-> **To avoid having to call the Navigation component on every new page you make**, look into the **React Router Docs** to see how you might be able to extend its functionality.
+> _**NB:** The URL is updated and the content is dynamically updated. This is a fairly simple use of routing._ > **To avoid having to call the Navigation component on every new page you make**, look into the **React Router Docs** to see how you might be able to extend its functionality.
 
 ### 5.Let's get our Data
