@@ -4,7 +4,9 @@
   "description": "Headless WordPress with React and Next.js Frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next -p 8081",
+    "build": "next build",
+    "start": "next start -p 8081"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/tmaulon/headless-wp-react-nextjs/issues"
   },
-  "homepage": "https://github.com/tmaulon/headless-wp-react-nextjs#readme"
+  "homepage": "https://github.com/tmaulon/headless-wp-react-nextjs#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
