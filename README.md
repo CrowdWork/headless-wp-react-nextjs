@@ -65,7 +65,19 @@ Anything inside a **pages directory** will be treated as a **page**. Anything **
 
 > _Still running your project via `bash npm run dev` : click “Posts” to see posts page_
 
-> _**NB:** The URL is updated and the content is dynamically updated. This is a fairly simple use of routing._
-> **To avoid having to call the Navigation component on every new page you make**, look into the **React Router Docs** to see how you might be able to extend its functionality.
+> _**NB:** The URL is updated and the content is dynamically updated. This is a fairly simple use of routing._ > **To avoid having to call the Navigation component on every new page you make**, look into the **React Router Docs** to see how you might be able to extend its functionality.
 
 ### 5.Let's get our Data
+
+_We need to get our data from our WordPress install we set up at the top._
+
+- Use **Axios** package **to make API requests** inside the posts.js file we created.
+
+  > _**React docs recommend using fetch**, but there are some compatibility issues and some extra steps involved in those requests. Axios has fallbacks for older browsers and takes the guesswork out of making an API request._
+
+- Import axios and react
+- Build a **class that extends React.component** so that we can **set our initial props**(our API data) and **render our component**.
+- Make an **async request**, and **resolve the promise via axios** and then **assign that data value to a prop** that we can access inside our render function.
+- **Access that data inside our render function** as this.props.posts. And use **JSX** to output each post title into a list.
+
+> _For now, we’ll just output a simple list of rendered titles._

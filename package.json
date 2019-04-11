@@ -25,8 +25,12 @@
   "homepage": "https://github.com/tmaulon/headless-wp-react-nextjs#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "compass": "^0.1.1",
     "next": "^8.0.4",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-compass": "^0.1.0",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0"
   }
 }
