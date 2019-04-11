@@ -5,17 +5,35 @@
  */
 import Link from "next/link";
 
+const navLinkListStyle = {
+  display: "flex",
+  alignItems: "center",
+  listStyleType: "none"
+};
+const navLinkItemStyle = {
+  margnRight: 15
+};
+const navLinkStyle = {
+  padding: "15 25",
+  backgroundColor: "#0000ff",
+  color: "#fff"
+};
+
 export default () => {
   return (
-    <ul>
-      <li>
+    <ul style={navLinkListStyle}>
+      <li style={navLinkItemStyle}>
         <Link href="/">
-          <a href="/">Home</a>
+          <a href="/" title="Home">
+            Home
+          </a>
         </Link>
       </li>
-      <li>
-        <Link href="/posts">
-          <a href="/posts">Posts</a>
+      <li style={navLinkItemStyle}>
+        <Link href="/nous-rejoindre">
+          <a href="/nous-rejoindre" title="Nous rejoindre" style={navLinkStyle}>
+            Nous rejoindre
+          </a>
         </Link>
       </li>
     </ul>

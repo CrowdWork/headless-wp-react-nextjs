@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import React, { Component, Fragment } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 export default class extends Component {
   //Resolve promise and set initial props.
@@ -9,11 +10,10 @@ export default class extends Component {
     const response = await axios.get(
       "https://www.betomorrow.com/wp-json/wp/v2/posts/"
     );
-    const elt = console.log("response.data : ", response.data);
 
-    // Return response to posts object in props
+    // Return response to offers object in props
     return {
-      posts: response.data
+      offers: response.data
     };
   }
 
@@ -23,15 +23,22 @@ export default class extends Component {
         <Navigation />
         <h1>Nos Posts !</h1>
         <ul>
-          {this.props.posts.map(post => (
+          {this.props.offers.map(offer => (
             <li
-              key={post.id}
+              key={offer.id}
               className={
                 "bto_join_us_offer_card_wrapper bto_join_us_offer_card_wrapper__" +
-                post.id
+                offer.id
               }
             >
-              {post.title.rendered}
+              <Link href={`/nous-rejoindre/${offer.slug}`}>
+                <a
+                  href={`/nous-rejoindre/${offer.slug}`}
+                  title={`${offer.title.rendered}`}
+                >
+                  {offer.title.rendered}
+                </a>
+              </Link>
             </li>
           ))}
         </ul>

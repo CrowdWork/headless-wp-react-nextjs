@@ -4,9 +4,9 @@
   "description": "Headless WordPress with React and Next.js Frontend",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 8081",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start -p 8081"
+    "start": "NODE_PATH=. NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "compass": "^0.1.1",
+    "express": "^4.16.4",
     "next": "^8.0.4",
+    "next-routes": "^1.4.2",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-compass": "^0.1.0",
