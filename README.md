@@ -13,6 +13,20 @@ We use WordPress as decoupled backend CMS and React alongside Next.js to handle 
 
 ## Steps :
 
+<hr>
+
+[1. First things](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-1first-things)
+[2. Server](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-2server)
+[3. Folder Structure](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-3folder-structure)
+[4. Routing](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-4routing)
+[5. Let's get our Data](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-5lets-get-our-data)
+[6. Add Links](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-6add-links-to-our-posts)
+[7. Dynamic routing](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-7dynamic-routing)
+[8. Single post Template](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-8single-post-template)
+[9. MetaData](https://github.com/tmaulon/headless-wp-react-nextjs#user-content-9metadata)
+
+<hr>
+
 ### 1.First things
 
 - Set up a wordpress install either online or locallly
