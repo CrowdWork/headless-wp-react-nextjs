@@ -11,7 +11,7 @@ const navLinkListStyle = {
   listStyleType: "none"
 };
 const navLinkItemStyle = {
-  margnRight: 15
+  marginRight: 15
 };
 const navLinkStyle = {
   padding: "15 25",
